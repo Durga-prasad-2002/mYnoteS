@@ -22,7 +22,6 @@ function Login() {
       },
       body: JSON.stringify({ email: credentials.email, password: credentials.password })
     });
-    //   console.log("came");
     const json = await response.json();
     console.log(json);
     if (json.success) {
@@ -31,23 +30,10 @@ function Login() {
       showAlert("succesfully Loggedin", "success")
     }
     else {
-      showAlert("invalid user", "Error")
+      showAlert("invalid user", "danger")
     }
   }
   return (
-    // <div>
-    //   <form onSubmit={handleSubmit}>
-    //     <div className="mb-3">
-    //       <label htmlFor="email" className="form-label">Email address</label>
-    //       <input type="email" className="form-control" onChange={onChange} value={credentials.email} id="email" name='email' aria-describedby="emailHelp" />
-    //     </div>
-    //     <div className="mb-3">
-    //       <label htmlFor="password" className="form-label">Password</label>
-    //       <input type="password" className="form-control" onChange={onChange} value={credentials.password} id="password" name='password' />
-    //     </div>
-    //     <button type="submit" className="btn btn-primary" >Login</button>
-    //   </form>
-    //</div>
       <section class="container">
         <div class="login-container">
           <div class="circle circle-one"></div>

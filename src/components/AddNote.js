@@ -26,7 +26,7 @@ function AddNote() {
         <form>
             <input type="text" placeholder='Enter Title' id="title" name="title"aria-describedby="emailHelp" value={note.title} onChange={onChange} />
             <input type="text" placeholder='Enter Description' value={note.description} id="description" name="description" onChange={onChange}/>
-            <input type="text" placeholder='Enter Tag' value={note.tag} id="tag" name="tag" onChange={onChange}/>
+            <input type="text" placeholder='Enter Status' value={note.tag} id="tag" name="tag" onChange={onChange}/>
           <button type="submit" disabled={note.title.length<5 || note.description.length<5} className="btn btn-primary" onClick={handleClick}>Add Note</button>
         </form>
         </div>

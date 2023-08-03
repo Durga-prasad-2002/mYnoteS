@@ -33,7 +33,7 @@ const onChange =(event)=>{
         showAlert("succesfully created","success")
       }
       else{
-        showAlert("Invalid User","Error")
+        showAlert("Field requirement not matched","danger")
       }
   }
   return (

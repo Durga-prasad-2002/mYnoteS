@@ -23,7 +23,6 @@ const Notes = () => {
     // eslint-disable-next-line
   useEffect(() => {
     // eslint-disable-next-line
-    console.log("hello");
     if(localStorage.getItem('token')){
       getNotes();
     }
@@ -62,7 +61,7 @@ const Notes = () => {
                   <input type="text" className="form-control" id="edescription" name="edescription" value={note.edescription} onChange={onChange} />
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="etag" className="form-label">Tag</label>
+                  <label htmlFor="etag" className="form-label">Status</label>
                   <input type="text" className="form-control" id="etag" name="etag" value={note.etag} onChange={onChange} />
                 </div>
               </form>
